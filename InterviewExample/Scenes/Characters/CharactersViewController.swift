@@ -77,5 +77,16 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let character = characters[indexPath.row]
+        let alert = UIAlertController(title: "Este personagem aparece em",
+                                      message: character.films.joined(separator: ","),
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK",
+                                      style: .default,
+                                      handler: nil))
+        self.present(alert, animated: true)
+    }
 }
 
