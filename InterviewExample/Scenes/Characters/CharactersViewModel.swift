@@ -1,7 +1,11 @@
 import Foundation
 
 class CharactersViewModel {
-    private let service = DisneyCharacterService()
+    private let service: DisneyCharacterService!
+    
+    init() {
+        self.service = DisneyCharacterService()
+    }
     
     func loadCharacters(completion: @escaping ([DisneyCharacter]?, Error?) -> Void) {
         service.fetchCharacters { charactersResponse, error in
