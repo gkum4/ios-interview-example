@@ -14,26 +14,18 @@
 			remoteGlobalIDString = 0C6776A12DFA424400365343;
 			remoteInfo = InterviewExample;
 		};
-		0C6776C32DFA424D00365343 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C67769A2DFA424400365343 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C6776A12DFA424400365343;
-			remoteInfo = InterviewExample;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C6776A22DFA424400365343 /* InterviewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6776B82DFA424D00365343 /* InterviewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C6776C22DFA424D00365343 /* InterviewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		0C6776CA2DFA424D00365343 /* Exceptions for "InterviewExample" folder in "InterviewExample" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Base/Info.plist,
 			);
 			target = 0C6776A12DFA424400365343 /* InterviewExample */;
 		};
@@ -53,11 +45,6 @@
 			path = InterviewExampleTests;
 			sourceTree = "<group>";
 		};
-		0C6776C52DFA424D00365343 /* InterviewExampleUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = InterviewExampleUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,13 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0C6776BF2DFA424D00365343 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,7 +70,6 @@
 			children = (
 				0C6776A42DFA424400365343 /* InterviewExample */,
 				0C6776BB2DFA424D00365343 /* InterviewExampleTests */,
-				0C6776C52DFA424D00365343 /* InterviewExampleUITests */,
 				0C6776A32DFA424400365343 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +79,6 @@
 			children = (
 				0C6776A22DFA424400365343 /* InterviewExample.app */,
 				0C6776B82DFA424D00365343 /* InterviewExampleTests.xctest */,
-				0C6776C22DFA424D00365343 /* InterviewExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,29 +131,6 @@
 			productReference = 0C6776B82DFA424D00365343 /* InterviewExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0C6776C12DFA424D00365343 /* InterviewExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0C6776D32DFA424D00365343 /* Build configuration list for PBXNativeTarget "InterviewExampleUITests" */;
-			buildPhases = (
-				0C6776BE2DFA424D00365343 /* Sources */,
-				0C6776BF2DFA424D00365343 /* Frameworks */,
-				0C6776C02DFA424D00365343 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0C6776C42DFA424D00365343 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				0C6776C52DFA424D00365343 /* InterviewExampleUITests */,
-			);
-			name = InterviewExampleUITests;
-			packageProductDependencies = (
-			);
-			productName = InterviewExampleUITests;
-			productReference = 0C6776C22DFA424D00365343 /* InterviewExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,10 +145,6 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					0C6776B72DFA424D00365343 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 0C6776A12DFA424400365343;
-					};
-					0C6776C12DFA424D00365343 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 0C6776A12DFA424400365343;
 					};
@@ -215,7 +166,6 @@
 			targets = (
 				0C6776A12DFA424400365343 /* InterviewExample */,
 				0C6776B72DFA424D00365343 /* InterviewExampleTests */,
-				0C6776C12DFA424D00365343 /* InterviewExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,13 +179,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0C6776B62DFA424D00365343 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0C6776C02DFA424D00365343 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,13 +202,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0C6776BE2DFA424D00365343 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,11 +209,6 @@
 			isa = PBXTargetDependency;
 			target = 0C6776A12DFA424400365343 /* InterviewExample */;
 			targetProxy = 0C6776B92DFA424D00365343 /* PBXContainerItemProxy */;
-		};
-		0C6776C42DFA424D00365343 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0C6776A12DFA424400365343 /* InterviewExample */;
-			targetProxy = 0C6776C32DFA424D00365343 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -291,10 +222,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L5C36X97NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InterviewExample/Info.plist;
+				INFOPLIST_FILE = InterviewExample/Base/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +249,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L5C36X97NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InterviewExample/Info.plist;
+				INFOPLIST_FILE = InterviewExample/Base/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -495,40 +424,6 @@
 			};
 			name = Release;
 		};
-		0C6776D42DFA424D00365343 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L5C36X97NN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kumadev.InterviewExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = InterviewExample;
-			};
-			name = Debug;
-		};
-		0C6776D52DFA424D00365343 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L5C36X97NN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kumadev.InterviewExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = InterviewExample;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -555,15 +450,6 @@
 			buildConfigurations = (
 				0C6776D12DFA424D00365343 /* Debug */,
 				0C6776D22DFA424D00365343 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0C6776D32DFA424D00365343 /* Build configuration list for PBXNativeTarget "InterviewExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0C6776D42DFA424D00365343 /* Debug */,
-				0C6776D52DFA424D00365343 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
