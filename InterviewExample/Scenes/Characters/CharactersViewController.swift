@@ -67,12 +67,12 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
         let character = characters[indexPath.row]
         cell.characterNameLabel.text = character.name
         
-        if let imageUrl = character.imageUrl, let characterImageUrl = URL(string: imageUrl) {
-            do {
-                let data = try Data(contentsOf: characterImageUrl)
-                let image = UIImage(data: data)
-                cell.characterImage.image = image
-            } catch {}
+        if let imageUrl = character.imageUrl {
+            CharactersViewModel().fetchCharacterImage(for: imageUrl) { image, error in
+                if let image {
+                    cell.characterImage.image = image
+                }
+            }
         }
         
         return cell
